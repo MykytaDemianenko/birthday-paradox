@@ -42,7 +42,7 @@ Flask-Security-Too==3.4.2
 Flask-SQLAlchemy==2.1
 Flask-WTF==0.14.2
 gunicorn==20.0.4
-httplib2==0.14.0
+httplib2==0.18.0
 idna==2.8
 imagesize==1.2.0
 isort==4.3.21
