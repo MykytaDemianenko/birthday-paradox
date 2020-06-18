@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Birthday paradox{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <h1>Birthday paradox</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+  <form action="/" method="post">
+  <div>
+    <label for="exampleFormControlSelectDays">Количество дней в году</label>
+    <select class="form-control" id="exampleFormControlSelectDays" name='Days'>
+      <option>365</option>
+      <option>366</option>
+    </select>
+    </div>
+    <dib>
+    <label for="PersonCount">Количество людей в выборке:</label>
+    <input id="PersonCount" type="number" value=2 min=2 name='PersonCount'>
+    </div>
+    <div>
+    <label for="DaysRange">Интервал дат:</label>
+    <input id="DaysRange" type="number" value=0 min=0 name='DaysRange'>
+    </div>
+  <button type="submit"class="btn btn-primary">Send</button>
+</form>
+{% endblock %}
