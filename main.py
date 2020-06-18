@@ -16,10 +16,8 @@ def index():
             return "Invalid request", 400
         res = birthday_paradox(ydays, drange, pcnt)
         if res[0]:
-            print(res[1])
             return render_template('birthday_paradox.html', res=res[1], pcnt=pcnt, drange=drange)
         else:
-            print[res[1]]
             return render_template('birthday_paradox.html')
         
 
