@@ -2,9 +2,12 @@
 {% block title %}Birthday paradox{% endblock %}
 
 {% block content %}
+<form action="/" method="get">
     {% if drange == 0%}
             <p> Вероятность того, что в выборке из {{pcnt}} человек даты дней рождений совпадут хотя бы у пары человек равна {{res}}% </p>
     {% else %}
             <p> Вероятность того, что в выборке из {{pcnt}} человек даты дней рождений с отклонением не более чем на {{drange}} дней совпадут хотя бы у пары человек равна {{res}}%</p>
     {% endif%}
+    <button type="submit"class="btn btn-primary">Go back</button>
+</form>
 {% endblock %}
